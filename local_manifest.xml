@@ -45,11 +45,5 @@
     remote="github"
     revision="lineage-23.2" />
 
-  <!-- LineageOS Signing Keys -->
-  <project
-    name="mkpromvp/lineage_vendor_keys"
-    path="vendor/lineage-priv/keys"
-    remote="github"
-    revision="main" />
 
 </manifest>
