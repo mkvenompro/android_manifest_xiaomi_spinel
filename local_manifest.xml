@@ -51,13 +51,6 @@
     remote="spinel"
     revision="lineage-23.2" />
 
-  <!-- LineageOS Compat (blob fixups) -->
-  <project
-    name="LineageOS/android_hardware_lineage_compat"
-    path="hardware/lineage/compat"
-    remote="spinel"
-    revision="lineage-23.2" />
-
   <!-- Signing Keys (synced to vendor/private/keys to match device.mk) -->
   <project
     name="mkvenompro/lineage_vendor_keys"

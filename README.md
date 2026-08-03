@@ -37,7 +37,6 @@ Local manifest for building LineageOS 23 (Android 15) for the Redmi Note 15 4G (
 | `LineageOS/android_hardware_mediatek` | `hardware/mediatek` | `lineage-23.2` |
 | `LineageOS/android_device_mediatek_sepolicy_vndr` | `device/mediatek/sepolicy_vndr` | `lineage-23.2` |
 | `LineageOS/android_hardware_xiaomi` | `hardware/xiaomi` | `lineage-23.2` |
-| `LineageOS/android_hardware_lineage_compat` | `hardware/lineage/compat` | `lineage-23.2` |
 | `mkvenompro/lineage_vendor_keys` | `vendor/private/keys` | `main` |
 
 ## Notes
