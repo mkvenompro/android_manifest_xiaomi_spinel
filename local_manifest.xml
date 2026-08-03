@@ -12,19 +12,26 @@
 
   <!-- Spinel Device Tree -->
   <project
-    name="mkpromvp/android_device_xiaomi_spinel"
+    name="mkvenompro/android_device_xiaomi_spinel"
     path="device/xiaomi/spinel"
+    remote="github"
+    revision="lineage-23.2" />
+
+  <!-- Prebuilt Kernel Tree -->
+  <project
+    name="mkvenompro/android_device_xiaomi_spinel-kernel"
+    path="device/xiaomi/spinel-kernel"
     remote="github"
     revision="lineage-23.2" />
 
   <!-- Vendor Blobs -->
   <project
-    name="mkpromvp/proprietary_vendor_xiaomi_spinel"
+    name="mkvenompro/proprietary_vendor_xiaomi_spinel"
     path="vendor/xiaomi/spinel"
     remote="github"
     revision="lineage-23.2" />
 
-  <!-- MTK Hardware -->
+  <!-- MTK Hardware (includes libmtkperf_client, libaedv, wlan/wifi_hal) -->
   <project
     name="LineageOS/android_hardware_mediatek"
     path="hardware/mediatek"
@@ -45,5 +52,18 @@
     remote="github"
     revision="lineage-23.2" />
 
+  <!-- LineageOS Compat (blob fixups) -->
+  <project
+    name="LineageOS/android_hardware_lineage_compat"
+    path="hardware/lineage/compat"
+    remote="github"
+    revision="lineage-23.2" />
+
+  <!-- Signing Keys (synced to vendor/private/keys to match device.mk) -->
+  <project
+    name="mkvenompro/lineage_vendor_keys"
+    path="vendor/private/keys"
+    remote="github"
+    revision="main" />
 
 </manifest>
