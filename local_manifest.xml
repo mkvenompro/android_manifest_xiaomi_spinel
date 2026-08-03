@@ -1,69 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Remotes -->
+  <!-- Unique remote name: the LineageOS default manifest already defines a
+       'github' remote (fetch="..", review="review.lineageos.org"), so redefining
+       it here caused "remote github already exists with different attributes".
+       Using an absolute fetch with full org/name project paths avoids the clash. -->
   <remote
-    name="github"
+    name="spinel"
     fetch="https://github.com/" />
-
-  <remote
-    name="lineage"
-    fetch="https://github.com/LineageOS/" />
 
   <!-- Spinel Device Tree -->
   <project
     name="mkvenompro/android_device_xiaomi_spinel"
     path="device/xiaomi/spinel"
-    remote="github"
+    remote="spinel"
     revision="lineage-23.2" />
 
   <!-- Prebuilt Kernel Tree -->
   <project
     name="mkvenompro/android_device_xiaomi_spinel-kernel"
     path="device/xiaomi/spinel-kernel"
-    remote="github"
+    remote="spinel"
     revision="lineage-23.2" />
 
   <!-- Vendor Blobs -->
   <project
     name="mkvenompro/proprietary_vendor_xiaomi_spinel"
     path="vendor/xiaomi/spinel"
-    remote="github"
+    remote="spinel"
     revision="lineage-23.2" />
 
   <!-- MTK Hardware (includes libmtkperf_client, libaedv, wlan/wifi_hal) -->
   <project
     name="LineageOS/android_hardware_mediatek"
     path="hardware/mediatek"
-    remote="github"
+    remote="spinel"
     revision="lineage-23.2" />
 
   <!-- MTK Vendor SEPolicy -->
   <project
     name="LineageOS/android_device_mediatek_sepolicy_vndr"
     path="device/mediatek/sepolicy_vndr"
-    remote="github"
+    remote="spinel"
     revision="lineage-23.2" />
 
   <!-- Xiaomi Hardware -->
   <project
     name="LineageOS/android_hardware_xiaomi"
     path="hardware/xiaomi"
-    remote="github"
+    remote="spinel"
     revision="lineage-23.2" />
 
   <!-- LineageOS Compat (blob fixups) -->
   <project
     name="LineageOS/android_hardware_lineage_compat"
     path="hardware/lineage/compat"
-    remote="github"
+    remote="spinel"
     revision="lineage-23.2" />
 
   <!-- Signing Keys (synced to vendor/private/keys to match device.mk) -->
   <project
     name="mkvenompro/lineage_vendor_keys"
     path="vendor/private/keys"
-    remote="github"
+    remote="spinel"
     revision="main" />
 
 </manifest>
